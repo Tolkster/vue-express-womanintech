@@ -5,7 +5,7 @@
                 <div class="col-12 col-md-5 image">
                     <img src="../images/girlswhocode.png">
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-7">
                     <div class="in-tech__form">
                         <div class="container">
                             <div class="in-tech__form--title">
@@ -53,6 +53,7 @@
 </template>
 
 <style scoped>
+
 .in-tech__form__content.indique {
     margin-top: 2rem;
 }
@@ -61,10 +62,11 @@
 }
 
 .in-tech__banner {
-    margin-top: 2rem;
+    margin: 2rem 4rem;
 }
 
-.image img {
-    float: right;
+.in-tech__banner  img {
+    width: 100%;
+    border-radius: 10px;
 }
 </style>

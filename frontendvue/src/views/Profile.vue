@@ -22,10 +22,10 @@
             <strong>Email:</strong>
             {{currentUser.email}}
           </p>
-          <strong>Authorities:</strong>
-          <ul>
+          <strong>Tipo de usuário:  </strong> <span v-for="(role,index) in currentUser.roles" :key="index">{{role}}</span>
+          <!-- <ul>
             <li v-for="(role,index) in currentUser.roles" :key="index">{{role}}</li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 <template>
     <div class="in-tech__banner-course">
         <div class="in-tech__course">
-            <p>Html</p>
+            <p class="in-tech__course__header--top">Html</p>
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="in-tech__img col-12 col-md-3">
@@ -36,7 +36,7 @@
         </div>
 
         <div class="in-tech__course">
-            <p class="b-top">CSS</p>
+            <p class="b-top in-tech__course__header">CSS</p>
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="in-tech__img col-12 col-md-3">
@@ -158,5 +158,15 @@ export default {
 
 iframe {
     width: 100%;
+}
+
+.in-tech__course__header {
+    background-color: #caf7e3;
+}
+
+.in-tech__course__header--top {
+    background-color: #caf7e3;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 </style>

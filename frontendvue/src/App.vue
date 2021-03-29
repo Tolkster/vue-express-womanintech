@@ -23,9 +23,9 @@
               <li v-if="showModeratorBoard" class="nav-item">
                 <router-link to="/mod" class="nav-link">Moderator Board</router-link>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <router-link v-if="currentUser" to="/user" class="nav-link">User</router-link>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <router-link v-if="currentUser" to="/aulas" class="nav-link">Aulas</router-link>
               </li>
@@ -129,7 +129,7 @@ export default {
   }
 
   .in-tech__body {
-    height: calc(100vh - 6rem);
+    min-height: calc(100vh - 6rem);
     border: 7px solid black;
     border-radius: 4rem;
     background-color: white;
