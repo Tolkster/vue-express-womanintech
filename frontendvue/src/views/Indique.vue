@@ -53,6 +53,9 @@
 </template>
 
 <style scoped>
+.in-tech__form__content.indique {
+    margin-top: 2rem;
+}
 .in-tech__form__content {
     padding: 0;
 }
