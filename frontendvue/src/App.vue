@@ -11,7 +11,7 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <router-link to="/home" class="nav-link">
               <a class="in-tech__nav--title navbar-brand">
-                We <font-awesome-icon icon="heart" style="color: red" /> /> tech
+                We &#60; <font-awesome-icon icon="heart" style="color: red" /> /> tech
               </a>
             </router-link>
             <div class="navbar-nav mr-auto">
@@ -33,31 +33,31 @@
                 <router-link to="/indique" class="nav-link">Indique uma amiga</router-link>
               </li>
             </div>
-          </div>
-          <div v-if="!currentUser" class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <router-link to="/register" class="nav-link">
-                <span class="in-tech__nav-btn light">Registrar</span>
-              </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/login" class="nav-link">
-               <span class="in-tech__nav-btn login">Login</span>
-              </router-link>
-            </li>
-          </div>
- 
-          <div v-if="currentUser" class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <router-link to="/profile" class="nav-link">
-                <span class="in-tech__nav-btn light"> Oi {{ currentUser.username }}!</span>
-              </router-link>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href @click.prevent="logOut">
-                <span class="in-tech__nav-btn dark">Sair</span>
-              </a>
-            </li>
+            <div v-if="!currentUser" class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <router-link to="/register" class="nav-link">
+                  <span class="in-tech__nav-btn light">Registrar</span>
+                </router-link>
+              </li>
+              <li class="nav-item">
+                <router-link to="/login" class="nav-link">
+                <span class="in-tech__nav-btn login">Login</span>
+                </router-link>
+              </li>
+            </div>
+  
+            <div v-if="currentUser" class="cta-btn navbar-nav ml-auto">
+              <li class="nav-item">
+                <router-link to="/profile" class="nav-link">
+                  <span class="in-tech__nav-btn light"> Oi {{ currentUser.username }}!</span>
+                </router-link>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href @click.prevent="logOut">
+                  <span class="in-tech__nav-btn dark">Sair</span>
+                </a>
+              </li>
+            </div>
           </div>
         </nav>
       </header>

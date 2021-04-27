@@ -37,7 +37,7 @@ export default {
     }
 
     .in-tech__banner.index {
-        margin: 2rem 13rem;
+        margin: 2rem 8%;
     }
 
     .in-tech__banner.index img {

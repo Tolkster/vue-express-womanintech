@@ -32,20 +32,19 @@
                                     </a>
                                 </div>
                                 
-                            <!-- <div class="modal fade" id="indique" tabindex="-1" role="dialog" aria-labelledby="indiqueTitle" aria-hidden="true">
+                            <div class="modal fade" id="indique" tabindex="-1" role="dialog" aria-labelledby="indiqueTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         Obrigada por indicar uma amiga! Logo logo entraremos em contato! ;D
-                                        <img src="./styles/images/yeswecan.png"/>
                                     </div>
                                 </div>
                                 </div>
-                            </div> -->
+                            </div>
                             </form>
                 
                         </div>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,38 +1,31 @@
 <template>
     <div class="in-tech__banner-course">
         <div class="in-tech__course">
-            <p class="in-tech__course__header--top">Html</p>
+            <p class="in-tech__course__header--top">HTML</p>
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="in-tech__img col-12 col-md-3">
+                    <div class="in-tech__img col-12 col-md-6">
                         <b-button v-b-modal.modal-1>
-                            <img src="../images/thumbnail.png">
+                            <img src="../images/thumbnail_html.png">
                         </b-button>
                         <b-modal id="modal-1" title="Introdução">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LVcE_tsH7zo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://youtu.be/h0VhHkekmOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <b-form-checkbox switch size="lg">Eu assisti</b-form-checkbox>
                         </b-modal>
                         <span>Introdução</span>
                     </div>
-                    <div class="in-tech__img col-12 col-md-3">
+                    <div class="in-tech__img col-12 col-md-6">
                         <b-button v-b-modal.modal-2>
-                            <img src="../images/thumbnail.png">
+                            <img src="../images/thumbnail2_html.png">
                         </b-button>
                         <b-modal id="modal-2" title="Primeiro componente">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LVcE_tsH7zo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://youtu.be/5Wgo3raLvRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </b-modal>
                         <span>Primeiro componente</span>
                     </div>
-                    <div class="in-tech__img col-12 col-md-3">
-                        <b-button v-b-modal.modal-3>
-                            <img src="../images/thumbnail.png">
-                        </b-button>
-                        <b-modal id="modal-3" title="Projeto">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LVcE_tsH7zo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </b-modal>
-                        <span>Projeto</span>
-                    </div>
                 </div>
             </div>
+            <span class="in-tech__nav-btn light">Envie seu projeto</span>
         </div>
 
         <div class="in-tech__course">
@@ -100,7 +93,6 @@ export default {
 </script>
 
 <style>
-
 .btn {
     border-radius: 15px;
 }
@@ -168,5 +160,9 @@ iframe {
     background-color: #caf7e3;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+.custom-control-label {
+    text-transform: uppercase;
 }
 </style>

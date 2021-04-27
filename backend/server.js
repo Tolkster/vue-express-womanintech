@@ -4,6 +4,7 @@ const cors = require("cors");
 
 const app = express();
 
+// hosts permitidos para chamar api
 var corsOptions = {
   origin: "http://localhost:8081"
 };
