@@ -23,9 +23,6 @@
               <li v-if="showModeratorBoard" class="nav-item">
                 <router-link to="/mod" class="nav-link">Moderator Board</router-link>
               </li>
-              <!-- <li class="nav-item">
-                <router-link v-if="currentUser" to="/user" class="nav-link">User</router-link>
-              </li> -->
               <li class="nav-item">
                 <router-link v-if="currentUser" to="/aulas" class="nav-link">Aulas</router-link>
               </li>
@@ -125,7 +122,7 @@ export default {
 
   .in-tech {
     background: #FBE0DC;
-    padding: 3rem;
+    padding: 1rem;
   }
 
   .in-tech__body {
@@ -182,5 +179,11 @@ export default {
       right: 0;
       left: 0;
       margin: auto;
+  }
+
+  @media (min-width:720px) {
+    .in-tech {
+        padding: 3rem;
+    }
   }
 </style>

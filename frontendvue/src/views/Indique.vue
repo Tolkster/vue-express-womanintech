@@ -9,7 +9,7 @@
                     <div class="in-tech__form">
                         <div class="container">
                             <div class="in-tech__form--title">
-                            <h1>Indique uma futura dev!</h1>
+                                <h1>Indique uma futura dev!</h1>
                             </div>
                 
                             <form class="in-tech__form__content indique">

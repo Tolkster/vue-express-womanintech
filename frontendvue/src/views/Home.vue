@@ -1,7 +1,8 @@
 <template>
   <div class="in-tech__banner index">
-    <!-- <h3>{{content}}</h3> -->
-    <img src="../images/error_egggo.png">
+    <p>Oi, você quer descobrir como criar um portfólio incrível e aprender os primeiros passos para se entrar na área de tecnologia?</p>
+    <p class="text-center">Confira nossos cursos!</p>
+    <img src="../images/wecan.png">
   </div>
 </template>
 
@@ -32,6 +33,10 @@ export default {
 </script>
 
 <style>
+    .in-tech__nav {
+      font-size: 16px;
+    }
+
     .alerta-erro {
       color: red;
     }

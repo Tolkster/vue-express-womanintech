@@ -4,7 +4,7 @@ import Home from './views/Home.vue';
 import Login from './views/Login.vue';
 import Register from './views/Register.vue';
 import Indique from './views/Indique.vue';
-// import EnvioProjeto from './views/EnvioProjeto.vue'
+import EnvioProjeto from './views/EnvioProjeto.vue'
 
 Vue.use(Router);
 
@@ -32,10 +32,10 @@ export const router = new Router({
       path: '/indique',
       component: Indique
     },
-    // {
-    //   path: '/envioProjeto',
-    //   component: EnvioProjeto
-    // },
+    {
+      path: '/EnvioProjeto',
+      component: EnvioProjeto
+    },
     {
       path: '/profile',
       name: 'profile',

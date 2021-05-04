@@ -2,9 +2,9 @@
     <div class="in-tech__banner-course">
         <div class="in-tech__course">
             <p class="in-tech__course__header--top">HTML</p>
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="in-tech__img col-12 col-md-6">
+            <b-container fluid="sm">
+                <b-row>
+                    <b-col class="in-tech__img">
                         <b-button v-b-modal.modal-1>
                             <img src="../images/thumbnail_html.png">
                         </b-button>
@@ -12,56 +12,65 @@
                             <iframe width="560" height="315" src="https://youtu.be/h0VhHkekmOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <b-form-checkbox switch size="lg">Eu assisti</b-form-checkbox>
                         </b-modal>
-                        <span>Introdução</span>
-                    </div>
-                    <div class="in-tech__img col-12 col-md-6">
+                        <span>Aula I</span>
+                    </b-col>
+                    <b-col class="in-tech__img">
                         <b-button v-b-modal.modal-2>
                             <img src="../images/thumbnail2_html.png">
                         </b-button>
                         <b-modal id="modal-2" title="Primeiro componente">
                             <iframe width="560" height="315" src="https://youtu.be/5Wgo3raLvRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </b-modal>
-                        <span>Primeiro componente</span>
-                    </div>
+                        <span>Aula II</span>
+                    </b-col>
+                    <b-col class="in-tech__img">
+                        <b-button v-b-modal.modal-4>
+                            <img src="../images/thumbnail3_html.png">
+                        </b-button>
+                        <b-modal id="modal-4" title="Introdução">
+                            <iframe width="560" height="315" src="https://youtu.be/DXI-Tr-u3Hc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </b-modal>
+                        <span>Aula III</span>
+                    </b-col>
+                </b-row>
+                <div class="in-tech__rating">
+                    <b-form-rating v-model="value" readonly show-value precision="2"></b-form-rating>
                 </div>
-            </div>
-            <span class="in-tech__nav-btn light">Envie seu projeto</span>
+            </b-container>
         </div>
 
         <div class="in-tech__course">
             <p class="b-top in-tech__course__header">CSS</p>
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="in-tech__img col-12 col-md-3">
+            <b-container fluid="lg">
+                <b-row>
+                    <b-col class="in-tech__img">
                         <b-button v-b-modal.modal-4>
-                            <img src="../images/thumbnail2.png">
+                            <img src="../images/thumbnail3_html.png">
                         </b-button>
                         <b-modal id="modal-4" title="Introdução">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LVcE_tsH7zo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://youtu.be/DXI-Tr-u3Hc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </b-modal>
                         <span>Introdução</span>
-                    </div>
-                    <div class="in-tech__img col-12 col-md-3">
+                    </b-col>
+                    <b-col class="in-tech__img">
                         <b-button v-b-modal.modal-5>
-                            <img src="../images/thumbnail2.png">
+                            <img src="../images/thumbnail4_html.png">
                         </b-button>
                         <b-modal id="modal-5" title="Primeiro componente">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LVcE_tsH7zo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://youtu.be/gxH2d_sufvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </b-modal>
                         <span>Primeiro componente</span>
-                    </div>
-                    <div class="in-tech__img col-12 col-md-3">
-                        <b-button v-b-modal.modal-6>
-                            <img src="../images/thumbnail2.png">
-                        </b-button>
-                        <b-modal id="modal-6" title="Projeto">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LVcE_tsH7zo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </b-modal>
-                        <span>Projeto</span>
-                    </div>
-                </div>
-            </div>
+                    </b-col>
+                </b-row> 
+                <div class="in-tech__rating">
+                    <b-form-rating v-model="value" readonly show-value precision="2"></b-form-rating>
+                </div>   
+            </b-container>
         </div>
+        <router-link to="/envioProjeto" class="nav-link">
+            <span class="in-tech__nav-btn send light">Envie seu projeto</span>
+        </router-link>
+        
     </div>
 </template>
 
@@ -73,7 +82,8 @@ export default {
   name: 'User',
   data() {
     return {
-      content: ''
+      content: '',
+      value: 3.555
     };
   },
   mounted() {
@@ -110,7 +120,7 @@ export default {
 }
 
 .in-tech__banner-course {
-    margin: 3rem;
+    margin: 1rem;
     border: 3px solid black;
     border-radius: 20px;
 }
@@ -164,5 +174,22 @@ iframe {
 
 .custom-control-label {
     text-transform: uppercase;
+}
+
+.in-tech__nav-btn.send {
+    display: block;
+    margin: 2rem;
+    text-align: center;
+    color: black;
+}
+
+.in-tech__rating {
+    margin: 1rem;
+}
+
+@media (min-width:720px) {
+    .in-tech__banner-course {
+        margin: 3rem;
+    }
 }
 </style>
