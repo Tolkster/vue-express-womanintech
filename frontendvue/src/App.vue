@@ -144,7 +144,7 @@ export default {
   }
 
   .in-tech__nav--padding {
-    padding: 16px 3rem !important;
+    padding: 16px 1.5rem !important;
   }
 
   .in-tech__btn {
@@ -185,5 +185,18 @@ export default {
     .in-tech {
         padding: 3rem;
     }
+    
+  }
+
+  @media (max-width:414px) {
+    .navbar-collapse{
+      margin-left: 30px !important;
+    }
+
+    .nav-item{
+      margin-top: 10px !important;
+      margin-left: 40px !important;
+    }
+    
   }
 </style>

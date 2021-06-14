@@ -137,7 +137,7 @@ export default {
     }
 
    .in-tech__form {
-        margin: 4rem 0;
+        margin: 3rem 0;
     }
 
     .in-tech__form--title h1 {
@@ -145,10 +145,6 @@ export default {
         font-size: 1rem;
         text-align: center;
         position: relative;
-    }
-
-    .in-tech__form__content {
-        padding: 2rem 13rem;
     }
 
     .in-tech__form__content--input {
@@ -179,4 +175,16 @@ export default {
         color: white;
         border-color: none;
     }
+
+    @media (max-width:414px) {
+      .in-tech__form__content {
+        padding: 0 !important;
+      }
+    }
+
+    @media (min-width:720px) {
+      .in-tech__form__content {
+        padding: 2rem 13rem;
+      }
+   }
 </style>
